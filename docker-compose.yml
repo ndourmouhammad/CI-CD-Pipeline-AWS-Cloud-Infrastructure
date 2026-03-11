@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mon-site:
+    image: ndourmouhammad/mon-portfolio-docker:v1
+    ports:
+      - "8080:80"
+  base-de-donnees:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: clinique_db
+    ports:
+      - "5432:5432"
