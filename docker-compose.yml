@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   mon-site:
-    image: ndourmouhammad/mon-portfolio-docker:v1
+    image: ndourmouhammad/mon-portfolio-docker:latest
     ports:
       - "8080:80"
   base-de-donnees:
